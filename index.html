@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c7ba1277a1.js" crossorigin="anonymous"></script>
+    <!-- Add tsParticles library -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="tsparticles"></div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="logo">Kirwa</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile" id="home">
+        <img src="https://images.unsplash.com/photo-1531752006730-70f2fdb30bdc?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile Picture">
+        <h1>Kirwa</h1>
+        <h3>Web Developer</h3>
+        <p>Crafting elegant solutions to complex problems through clean, efficient code.</p>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="project-container">
+            <div class="Project">
+                <a href="https://reliable-hands-rho.vercel.app/" target="_blank" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <h4>Reliable-hands</h4>
+                <p>A modern Website, where to find reliable service providers.</p>
+                <button>Javascript</button>
+                <button>Css</button>
+            </div>
+            <div class="Project">
+                <a href="https://github.com/username/project2" target="_blank" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <h4>Shop</h4>
+                <p>A modern Ecommerce</p>
+                <button>Javascript</button>
+                <button>Css</button>
+            </div>
+            <div class="Project">
+                <a href="https://github.com/username/project3" target="_blank" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <h4>Shop</h4>
+                <p>A modern Ecommerce</p>
+                <button>Javascript</button>
+                <button>Css</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills" id="skills">
+        <h1>Technical Skills</h1>
+        <div class="skill-container">
+            <div class="Skill">
+                <i class="fa-solid fa-file-code"></i>
+                <p>Javascript</p>
+            </div>
+            <div class="Skill">
+                <i class="fa-solid fa-file-code"></i>
+                <p>Css</p>
+            </div>
+            <div class="Skill">
+                <i class="fa-solid fa-code"></i>
+                <p>React</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="tools" id="tools">
+        <h1>Tools</h1>
+        <div class="tool-container">
+            <div class="Tool">
+                <i class="fa-solid fa-code"></i>
+                <p>VS Code</p>
+            </div>
+            <div class="Tool">
+                <i class="fa-brands fa-github"></i>
+                <p>Git</p>
+            </div>
+            <div class="Tool">
+                <i class="fa-brands fa-figma"></i>
+                <p>Figma</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contacts" id="contact">
+        <h1>Contact</h1>
+        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your name..." required>
+            <input type="email" name="email" placeholder="Your email..." required>
+            <input type="number" name="number" placeholder="Your phone number...">
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- M-Pesa Buy Me a Coffee Button -->
+        <div class="coffee-button-container">
+            <button class="coffee-btn">Buy Me a Coffee</button>
+        </div>
+        <!-- Modal for M-Pesa Instructions -->
+        <div id="coffee-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h2>Support Me with M-Pesa</h2>
+                <p>Please send your contribution via M-Pesa to:</p>
+                <p><strong>Phone Number:</strong> 0712345678</p>
+                <p><strong>Name:</strong> Solomon Kirwa</p>
+                <p>After sending, feel free to notify me via the form above or WhatsApp!</p>
+            </div>
+        </div>
+        <div class="social-media-section">
+            <h2>Socials</h2>
+            <div class="social-container">
+                <div class="Social">
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <p>Twitter</p>
+                    </a>
+                </div>
+                <div class="Social">
+                    <a href="https://github.com/kirwa-codes" target="_blank" class="social-link">
+                        <i class="fa-brands fa-square-github"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="Social">
+                    <a href="mailto:solomonkirwa15@gmail.com" class="social-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email</p>
+                    </a>
+                </div>
+                <div class="Social">
+                    <a href="https://wa.me/254714368322" target="_blank" class="social-link">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>WhatsApp</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with Copyright -->
+    <footer class="footer">
+        <p>© 2025 Kirwa. All rights reserved.</p>
+    </footer>
+
+    <!-- tsParticles Configuration -->
+    <script>
+        tsParticles.load("tsparticles", {
+            background: {
+                color: {
+                    value: "transparent" // Let the CSS gradient handle the background
+                }
+            },
+            particles: {
+                number: {
+                    value: 50 //Number of particles
+                },
+                color: {
+                    value: "#00FFC2" // Cyan/teal color for dots
+                },
+                links: {
+                    enable: true,
+                    color: "#00FFC2", // Cyan/teal for connecting lines
+                    opacity: 0.5,
+                    distance: 100 // Distance for line connections
+                },
+                move: {
+                    enable: true,
+                    speed: 1 // Animation speed
+                },
+                size: {
+                    value: { min: 2, max: 5 } // Particle size range
+                },
+                opacity: {
+                    value: 1
+                }
+            }
+        });
+    </script>
+
+    <!-- M-Pesa Modal Script -->
+    <script>
+        const modal = document.getElementById("coffee-modal");
+        const btn = document.querySelector(".coffee-btn");
+        const span = document.querySelector(".close");
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission (redirect)
+
+            const form = this;
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Success: Show notification and reset form
+                    alert('Thank you! Your message has been sent successfully.');
+                    form.reset();
+                    // Optional: Track form submission in Google Analytics
+                    gtag('event', 'form_submission', {
+                        'event_category': 'Contact',
+                        'event_label': 'Contact Form'
+                    });
+                } else {
+                    alert('Oops! Something went wrong. Please try again.');
+                }
+            })
+            .catch(error => {
+                alert('Error: Unable to send your message. Please check your connection and try again.');
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+    <!-- Link to JavaScript File -->
+    <script src="js.js"></script>
+</body>
+</html>
